@@ -16,7 +16,7 @@ else
 fi
 
 v_lesspipe_version="$(curl -s https://api.github.com/repos/wofr06/lesspipe/releases/latest | \
-              awk -F': ' '/tag_name/ { gsub(/\"|\,/,"",$2); print $2 }')"
+                      awk -F': ' '/tag_name/ { gsub(/\"|\,/,"",$2); print $2 }')"
 
 lesspipe_version="${v_lesspipe_version#?}"
 
