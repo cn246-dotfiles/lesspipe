@@ -1,31 +1,40 @@
 ## Less Dotfiles
 
-This repo sets up dotfiles for `lesskey` and `lesspipe`
+This repo sets up dotfiles for [lesskey](https://manpages.debian.org/stable/less/lesskey.1.en.html) and [lesspipe](https://github.com/wofr06/lesspipe)
 
-----
+There is also a script that will install or update **lesspipe** from it's git repository.
+
+When running `stow`, it will be symlinked to a directory in $PATH.
 
 ### Installing
 - Create a hidden dotfiles directory:
-```bash
-mkdir -p "${HOME}/.dotfiles"
-```
+
+        mkdir -p "${HOME}/.dotfiles"
+
 
 - Change directories:
-```bash
-cd "${HOME}/.dotfiles"
-```
+
+        cd "${HOME}/.dotfiles"
+
 
 - Clone this repo
-```bash
-git clone git@github.com:cn246-dotfiles/less.git
-```
+
+        git clone git@github.com:cn246-dotfiles/less.git
+
 
 - Stow the dotfiles:
-```bash
-stow --verbose --no-folding less
-```
 
-----
+        stow --verbose --no-folding less
+
+- Open new terminal tab or window to update $PATH:
+
+        <cmd> + t
+
+
+- Install or update **lesspipe**:
+
+        update-lesspipe
+
 
 ### Links
 - https://manpages.debian.org/stable/less/lesskey.1.en.html
